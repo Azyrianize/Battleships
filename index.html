@@ -2,27 +2,54 @@
 <html lang="pl">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Battleship</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+	<title>Battleship Game</title>
+	<meta name="description" content="Game called Battleship">
+	<meta name="keywords" content="battleship, statki, gra">
+	<meta name="author" content="Kacper Neuman">
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
   
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
-  
-  <script defer src="js/World.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+	<script defer src="js/bootstrap/bootstrap.min.js"></script>
+	<script defer src="js/World.js"></script>
 
 </head>
 
 <body>
+	
+	<main>
+		<div class="container">
+			
+			<header>				
+				<h1>Battleship Game!</h1>
+				<p>Just press start and enjoy the game. Have fun!</p>		
+			</header>
+				
+			<div class="wrap col-sm-12">		
+				<div id="menu">
+					<h2>MENU</h2>	
+					<button id="start" class="menuButton ">Start Game!</button>
+					<button id="instructions" class="menuButton ">Instructions</button>
+				</div>
+						
+				<div id="game" class="row nopadding">
+					<div id="myBoard" class="col-sm-6 nopadding"></div>
+					<div id="enemyBoard" class="col-sm-6 nopadding"></div>
+					
+					<button id="back" class="menuButton ">Back</button>
+				</div>
+			</div>		
+		</div>
 
-  <div id="container">
-
-    
-    
-
-  </div>
-
+	</main>
+	
 </body>
 
 </html>
